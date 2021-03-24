@@ -1,3 +1,11 @@
+section {
+    position: relative;
+    width: fit-content;
+}
+
+h1 {
+    display: inline-block;
+}
 .exo1 {
     font-weight: bold;
     position: relative;
@@ -18,7 +26,7 @@
 
 .exo1:hover::after {
     background-color: orangered;
-    width: 12%;
+    width: 100%;
 }
 
 
@@ -31,7 +39,6 @@
     position: relative;
     text-transform: uppercase;
     font-size: 5rem;
-    width: 13%;
 }
 
 .exo2::before {
@@ -65,7 +72,7 @@
 .exo3::before{
     content: "";
     position: absolute;
-    width: 13%;
+    width: 100%;
     height: 0;
     bottom: 0;
     left: 0;
