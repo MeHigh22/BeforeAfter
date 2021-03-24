@@ -1,0 +1,83 @@
+.exo1 {
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.exo1::after{
+    content:"";
+    background-color:orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 0;
+    transition: 2s;
+}
+
+.exo1:hover::after {
+    background-color: orangered;
+    width: 12%;
+}
+
+
+/* fin Exo 1 */
+
+/* Exo 2 */
+
+.exo2 {
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 5rem;
+    width: 13%;
+}
+
+.exo2::before {
+    content:"";
+    background-color: palegreen;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    transition: all 2s;
+    visibility: hidden;
+    transform: scaleX(0);
+}
+
+.exo2:hover::before {
+    visibility: visible;
+    transform: scalex(1);
+}
+
+/* fin Exo 2 */
+
+/* Exo 3 */
+.exo3 {
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.exo3::before{
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rebeccapurple;
+    visibility: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+.exo3:hover::before{
+    visibility: visible;
+    height: 80px;
+    opacity: 50%;
+}
+
+/* fin Exo 3 */
